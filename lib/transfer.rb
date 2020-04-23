@@ -9,6 +9,6 @@ attr_accessor :sender, :receiver, :amount
   end
 
 def valid?
-  (@sender > 0) && (@receiver > 0)
+  (@sender == true) && (@receiver == true)
 end
 end
