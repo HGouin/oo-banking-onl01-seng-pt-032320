@@ -19,6 +19,7 @@ def execute_transfer
     @status = "complete"
   else
     @status = "rejected"
+  end
 end
 
 end
