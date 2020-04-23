@@ -13,7 +13,7 @@ def valid?
 end
 
 def execute_transaction
-  if @sender.balance > @amount && @status == "pending"
+  if @sender.balance > 0
     @sender.balance -= @amount
     @receiver.balance += @amount
     @status = "complete"
@@ -21,6 +21,7 @@ def execute_transaction
     @status = "rejected"
     return "Transaction rejected. Please check your account balance."
   end
+end
 
   def reverse_transfer
     if @status == "complete"
