@@ -9,6 +9,5 @@ end
 
 def deposit(balance)
   @balance << self
-
 end
 end
