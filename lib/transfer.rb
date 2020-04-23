@@ -15,7 +15,7 @@ end
 def execute_transaction
   if @sender.balance > 0
     @sender.balance -= @amount
-    @receiver.balance += @amounr
+    @receiver.balance += @amount
     @status = "complete"
   else
     @status = "rejected"
