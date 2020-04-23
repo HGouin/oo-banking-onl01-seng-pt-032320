@@ -11,4 +11,14 @@ attr_accessor :sender, :receiver, :amount
 def valid?
   @sender.valid? && @receiver.valid?
 end
+
+def execute_transfer
+  if @sender.balance > 0
+    @sender.balance -= @amount
+    @receiver.balance += @amounr
+    @status = "complete"
+  else
+    @status = "rejected"
+end
+
 end
