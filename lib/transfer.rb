@@ -8,7 +8,7 @@ attr_accessor :sender, :receiver, :amount
     @amount = 50
   end
 
-def valid?(sender, receiver)
-
+def valid?
+  @sender.valid? && @receiver.valid?
 end
 end
