@@ -20,6 +20,6 @@ def valid?
   end
 
   def close_account
-    self.clear
+    self.
   end
 end
