@@ -16,6 +16,6 @@ def display_balance
 end
 
 def valid?
-(@balance > 0) && (@status = "open")
+(@balance > 0) && (@status == "open")
   end
 end
