@@ -8,6 +8,6 @@ def initialize(name)
 end
 
 def deposit(balance)
-  @balance << self
+  self << @balance
 end
 end
