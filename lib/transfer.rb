@@ -12,7 +12,7 @@ def valid?
   @sender.valid? && @receiver.valid?
 end
 
-def execute_transfer
+def execute_transaction
   if @sender.balance > 0
     @sender.balance -= @amount
     @receiver.balance += @amounr
