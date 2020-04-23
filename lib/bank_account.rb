@@ -7,7 +7,7 @@ def initialize(name)
   @status = "open"
 end
 
-def deposit(balance)
-  self << @balance
+def deposit(deposit_amount)
+  @balance += deposit_amount
 end
 end
